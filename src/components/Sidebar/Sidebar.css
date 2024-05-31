@@ -1,0 +1,236 @@
+.sidebar-container{
+    border:2px solid #DBDBDB;
+    height:100%;
+    overflow: scroll;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.logo>span{
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 600;
+    /* font-family: "inter"; */
+}
+
+.l{
+    transform: translateX(-13px);
+}
+
+.header-container{
+    /* margin-top: 32px; */
+    padding-top: 32px ;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    /* border-right:1px solid #DBDBDB; */
+    border-bottom:1px solid #DBDBDB ;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+}
+
+
+
+.sidebar-menu-title-container{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding-top: 30px;
+    
+    
+}
+
+.sidebar-menu-title-container:last-of-type{
+    border-bottom:1px solid #DBDBDB ;
+    padding-bottom:33.5px;
+    
+}
+
+.sidebar-menu-title-container > span{
+    font-size: 16px;
+    color:#787486;
+    line-height: 19.36px;
+    font-weight: 500;
+}
+
+.sidebar-menu-container{
+
+    padding-left:24px;
+    padding-right: 15px;
+    
+    /* border-right:1px solid #DBDBDB; */
+    /* border-bottom:1px solid #DBDBDB ; */
+}
+
+
+
+
+.sidebar-projects-container{
+    /* border: 1px solid red; */
+   
+    
+    
+}
+
+.sidebar-projects-title-container{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+     padding:30.5px 22px 0 27px ;
+}
+
+.sidebar-projects-title-container > span{
+    font-size:12px;
+    font-weight:700;
+    line-height:14.52px;
+}
+
+.sidebar-container >div{
+
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px 10px 14px;
+    color:#787486;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.project-container:hover{
+    background-color: rgba(80, 48, 229, 0.08);
+    color:#000;
+    font-weight: 600;
+}
+.project-container>div{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.project-container>div>span{
+    
+    font-size:16px;
+    
+    line-height: 19.36px;
+}
+.sidebar-projects-collection{
+    /* margin-top: 21px; */
+    margin:21px 13.5px 0 12px ;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.active_project{
+    background-color: rgba(80, 48, 229, 0.08);
+    color:#000;
+    font-weight: 600;
+}
+
+
+
+/* Banner thing right her */
+.banner-container{
+    padding: 20px;
+    background-color: #F5F5F5;
+    width:200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 23px;
+    border-radius: 16px;
+}
+
+.banner-glow-container{
+    width:66px;
+    height: 66px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: -50px;
+    
+}
+.banner-glow-container>div{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+
+    background: rgba(252, 214, 74, 0.5);
+    filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-message-containe{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+    margin: auto;
+}
+
+.banner-mes{
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+
+    text-align: center;
+    color:#787486;
+    margin-top: 12px;
+    margin-bottom: 14px;
+
+}
+
+.banner-message-container >button{
+    border: none;
+    background-color: #fff;
+    color:#000;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 12px 27px;
+
+
+
+}
+
+@media (min-width:1500px){
+    .logo>span{
+        font-size: 20px;
+        line-height: 24.2px;
+        font-weight: 600;
+        /* font-family: "inter"; */
+    }
+
+}
+
+@media (max-width:1300px){
+    .sidebar-container >div{
+        display: none;
+    }
+}
